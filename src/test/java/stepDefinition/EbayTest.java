@@ -49,8 +49,8 @@ public class EbayTest {
 	public void user_click_See_All() {
 		wait=new WebDriverWait(driver,110);
 
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//button[@type='button'])[2]")));
-		driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='All Filters']")));
+		driver.findElement(By.xpath("//button[normalize-space()='All Filters']")).click();
 
 	}
 
